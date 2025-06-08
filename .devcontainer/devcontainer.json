@@ -11,8 +11,5 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "ms-vscode.vscode-typescript-next"
-  ],
-  "forwardPorts": [3000],
-  "postCreateCommand": "npm install && cargo build",
-  "remoteUser": "vscode"
+  ]
 }
