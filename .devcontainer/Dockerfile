@@ -1,10 +1,6 @@
 # GitHub Dev Container Base Image
 FROM mcr.microsoft.com/devcontainers/base:debian
 
-# Install Rust
-RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
-ENV PATH="/root/.cargo/bin:${PATH}"
-
 # Install Node.js (via nvm)
 ENV NVM_DIR=/usr/local/share/nvm
 ENV NODE_VERSION=20
@@ -20,3 +16,7 @@ RUN mkdir -p $NVM_DIR && \
 
 # Set default user
 USER vscode
+
+# Install Rust
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+ENV PATH="/root/.cargo/bin:${PATH}"
