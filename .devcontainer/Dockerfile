@@ -7,7 +7,7 @@ FROM mcr.microsoft.com/devcontainers/typescript-node
 # Install Rust
 ENV RUSTUP_HOME=/usr/local/rustup \
 CARGO_HOME=/usr/local/cargo \
-PATH=/usr/local/cargo/bin:$PATH \
+PATH=/usr/local/cargo/bin:$PATH
 
 RUN curl https://sh.rustup.rs -sSf | \
 sh -s -- -y --no-modify-path --default-toolchain stable \
